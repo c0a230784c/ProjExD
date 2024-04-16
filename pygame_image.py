@@ -16,7 +16,7 @@ def main():
     kk_rct = kk_img.get_rect()#練習8-1
     kk_rct.center=300,200
     tmr = 0
-    bg_x = 0
+    kk_x = 0
 
     while True:
         for event in pg.event.get():
@@ -38,7 +38,8 @@ def main():
         screen.blit(bg_img2,[-x+4800,0])#練習7-2
         screen.blit(kk_img,kk_rct.center)#練習7-2
         pg.display.update()
-        tmr += 1        
+        tmr += 1   
+        kk_rct.move_ip((-1,0))
         clock.tick(200)#練習5
 
 
